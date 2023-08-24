@@ -15,6 +15,30 @@ body{
     margin: 0 auto;
 }
 
+.flex{
+    display: flex;
+}
+
+.contato button{
+    padding: 8px 35px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+} /*  */
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #2073bd;
+}
+
 /* CABEÇALHO */
 
 header{
@@ -48,16 +72,96 @@ header nav ul li{
     padding: 0 40px;
 } /*  */
 
-header .contato button{
-    padding: 8px 35px;
-    font-size: 18px;
-    font-weight: 700;
-    border: 0;
-    border-radius: 10px;
-    cursor: pointer;
-} /*  */
-
-header .contato button:hover{
+.contato button:hover{
     box-shadow: 0px 0px 8px #2073bd;
+    transform: scale(1.05);
 } /*  */
 
+/* FIM DO CABEÇALHO */
+/* ---------------------------------------------------------------- */
+/* TOPO DO SITE */
+
+section.topoSite{
+    padding: 40px 4%;
+}
+
+section.topoSite .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+
+.topoSite h1{
+    color: #fff;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.topoSite .textoTopoSite h1 span{
+    color: #2073bd;
+    font-size: 45px;
+}
+
+.topoSite, .textoTopoSite p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+/* ANIMAÇÃO DE IMAGEM (NÃO FUNCIONOU)
+
+.topoSite .imgSite img{
+    position: relative;
+    height: 400px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30%;
+    }
+} */
+
+/* SKILLS */
+
+section.skills{
+    padding: 40px 4%;
+}
+
+.skills .skills-box{
+    padding: 120px;
+    align-items: center;
+}
+
+/* SOBRE */
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #2073bd;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
